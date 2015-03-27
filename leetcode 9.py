@@ -53,7 +53,3 @@ class Solution:
                 return True
             else:
                 return False
-        
-        
-a = Solution()
-print Solution.isPalindrome2(a, 12)
