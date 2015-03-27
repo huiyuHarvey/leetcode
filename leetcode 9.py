@@ -39,5 +39,21 @@ class Solution:
                         else:
                             return False
 
+    def isPalindrome2(self, x):
+        origin = x
+        reverse = 0
+        if x<0:
+            return False
+        else:
+            while x>0:
+                reverse = x%10 + reverse*10
+                x = x/10
+            print reverse
+            if reverse == origin:
+                return True
+            else:
+                return False
+        
+        
 a = Solution()
-print Solution.isPalindrome(a, 100021)
+print Solution.isPalindrome2(a, 12)
